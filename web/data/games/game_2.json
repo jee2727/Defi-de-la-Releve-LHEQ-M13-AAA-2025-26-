@@ -1,0 +1,92 @@
+{
+  "id": "game_2",
+  "status": "FINAL",
+  "home_team": "ARMADA DR M13",
+  "away_team": "REMPARTS DR M13",
+  "home_score": 2,
+  "away_score": 1,
+  "date": "2026-05-08",
+  "tournament": "TOURNOI #DRM13-002",
+  "venue": "Complexe Sportif Thibault GM (Sherbrooke, QC)",
+  "extracted_at": "2026-06-29T02:45:00Z",
+  "extraction_method": "PDF game sheet snapshot",
+  "goals": [
+    {
+      "time": "11:22",
+      "period": 2,
+      "player_name": "MATT GENDREAU",
+      "player_number": 78,
+      "team": "ARMADA DR M13",
+      "position": "M",
+      "assists": [
+        {
+          "player_name": "MATHEO ARMSTRONG",
+          "player_number": 72
+        },
+        {
+          "player_name": "AYDEN GOUDREAU",
+          "player_number": 84
+        }
+      ]
+    },
+    {
+      "time": "1:43",
+      "period": 3,
+      "player_name": "MILAN VUKOMANOVIC",
+      "player_number": 9,
+      "team": "REMPARTS DR M13",
+      "position": "M",
+      "assists": [
+        {
+          "player_name": "ALEXIS POUDRIER",
+          "player_number": 14
+        }
+      ]
+    },
+    {
+      "time": "13:03",
+      "period": 3,
+      "player_name": "SASHA DURDEVIC",
+      "player_number": 82,
+      "team": "ARMADA DR M13",
+      "position": "S",
+      "assists": [
+        {
+          "player_name": "THOMAS LACELLE",
+          "player_number": 76
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_goals": 3,
+    "armada_goals": 2,
+    "remparts_goals": 1,
+    "scoring_leaders": [
+      {
+        "player_name": "MATT GENDREAU",
+        "team": "ARMADA DR M13",
+        "number": 78,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "player_name": "SASHA DURDEVIC",
+        "team": "ARMADA DR M13",
+        "number": 82,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "player_name": "MILAN VUKOMANOVIC",
+        "team": "REMPARTS DR M13",
+        "number": 9,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      }
+    ]
+  }
+}
