@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - Hockey Quebec Tournament</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .filter-section {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .filter-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .table-container {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+        }
+        h1 {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        .badge-F { background-color: #007bff; }
+        .badge-D { background-color: #28a745; }
+        .badge-G { background-color: #dc3545; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-lg">
+            <a class="navbar-brand" href="index.html">🏆 Quebec Tournament Stats</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="players.html">Players</a></li>
+                    <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-lg my-5">
+        <h1>Player Statistics</h1>
+
+        <div class="filter-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="filter-label">Team</div>
+                    <select class="form-select" id="teamFilter"><option value="">All Teams</option></select>
+                </div>
+                <div class="col-md-4">
+                    <div class="filter-label">Position</div>
+                    <select class="form-select" id="positionFilter">
+                        <option value="">All Positions</option>
+                        <option value="F">Forwards</option>
+                        <option value="D">Defensemen</option>
+                        <option value="G">Goalies</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <div class="filter-label">Search</div>
+                    <input type="text" class="form-control" id="searchInput" placeholder="Player name...">
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th><th>Player</th><th>Team</th><th>Pos</th><th>GP</th><th>G</th><th>A</th><th>Pts</th><th>PIM</th>
+                    </tr>
+                </thead>
+                <tbody id="playersTableBody">
+                    <tr><td colspan="9" class="text-center text-muted">Loading players...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2026 Hockey Quebec Tournament Statistics</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let allPlayers = [];
+
+        async function loadPlayersData() {
+            try {
+                const response = await fetch('data/players.json');
+                allPlayers = await response.json();
+
+                const teamSelect = document.getElementById('teamFilter');
+                const teams = [...new Set(allPlayers.map(p => p.team_name))];
+                teams.forEach(team => {
+                    const option = document.createElement('option');
+                    option.value = team;
+                    option.textContent = team;
+                    teamSelect.appendChild(option);
+                });
+
+                displayPlayers(allPlayers);
+
+                document.getElementById('teamFilter').addEventListener('change', applyFilters);
+                document.getElementById('positionFilter').addEventListener('change', applyFilters);
+                document.getElementById('searchInput').addEventListener('keyup', applyFilters);
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('playersTableBody').innerHTML = '<tr><td colspan="9" class="text-center text-danger">Error loading data</td></tr>';
+            }
+        }
+
+        function displayPlayers(players) {
+            let html = '';
+            players.forEach((p, idx) => {
+                html += `
+                    <tr>
+                        <td>${idx + 1}</td>
+                        <td><strong>${p.name}</strong> #${p.number || '-'}</td>
+                        <td>${p.team_name}</td>
+                        <td><span class="badge badge-${p.position}">${p.position}</span></td>
+                        <td>${p.games_played}</td>
+                        <td>${p.goals}</td>
+                        <td>${p.assists}</td>
+                        <td><strong>${p.points}</strong></td>
+                        <td>${p.penalty_minutes}</td>
+                    </tr>
+                `;
+            });
+            document.getElementById('playersTableBody').innerHTML = html;
+        }
+
+        function applyFilters() {
+            const teamFilter = document.getElementById('teamFilter').value;
+            const positionFilter = document.getElementById('positionFilter').value;
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            let filtered = allPlayers.filter(p => {
+                const teamMatch = !teamFilter || p.team_name === teamFilter;
+                const positionMatch = !positionFilter || p.position === positionFilter;
+                const searchMatch = !searchTerm || p.name.toLowerCase().includes(searchTerm);
+                return teamMatch && positionMatch && searchMatch;
+            });
+
+            displayPlayers(filtered);
+        }
+
+        document.addEventListener('DOMContentLoaded', loadPlayersData);
+    </script>
+</body>
+</html>
