@@ -1,0 +1,88 @@
+{
+  "id": "game_4",
+  "status": "FINAL",
+  "home_team": "HUSKIES DR M13",
+  "away_team": "OCÉANIC DR M13",
+  "home_score": 0,
+  "away_score": 3,
+  "date": "2026-05-08",
+  "tournament": "TOURNOI #DRM13-004",
+  "venue": "Complexe Sportif Thibault GM (Sherbrooke, QC)",
+  "extracted_at": "2026-06-29T02:50:00Z",
+  "extraction_method": "PDF game sheet snapshot",
+  "goals": [
+    {
+      "time": "10:07",
+      "period": 1,
+      "player_name": "NATHAN BOUTET",
+      "player_number": 77,
+      "team": "OCÉANIC DR M13",
+      "position": "N",
+      "assists": [
+        {
+          "player_name": "FELIX BEAUCHESNE",
+          "player_number": 81
+        }
+      ]
+    },
+    {
+      "time": "1:33",
+      "period": 2,
+      "player_name": "OLIVIER BELAND",
+      "player_number": 82,
+      "team": "OCÉANIC DR M13",
+      "position": "O",
+      "assists": [
+        {
+          "player_name": "MALIK MIOUSE",
+          "player_number": 80
+        }
+      ]
+    },
+    {
+      "time": "2:33",
+      "period": 3,
+      "player_name": "JACOB GAUTHIER",
+      "player_number": 72,
+      "team": "OCÉANIC DR M13",
+      "position": "J",
+      "assists": [
+        {
+          "player_name": "LOGAN BLAIS",
+          "player_number": 86
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_goals": 3,
+    "huskies_goals": 0,
+    "oceanic_goals": 3,
+    "scoring_leaders": [
+      {
+        "player_name": "NATHAN BOUTET",
+        "team": "OCÉANIC DR M13",
+        "number": 77,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "player_name": "OLIVIER BELAND",
+        "team": "OCÉANIC DR M13",
+        "number": 82,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "player_name": "JACOB GAUTHIER",
+        "team": "OCÉANIC DR M13",
+        "number": 72,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      }
+    ]
+  }
+}
