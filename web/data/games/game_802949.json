@@ -1,0 +1,128 @@
+{
+  "id": 802949,
+  "status": "FINAL",
+  "home_team": "Drakkar DR M13",
+  "away_team": "Sagueneens DR M13",
+  "date": "2026-05-08",
+  "detail_url": "https://masculin.lheq.ca/ligue-de-hockey-d-excellence-du-quebec-masculin/schedule/802949",
+  "gamesheet_pdf_url": "https://pdf.play.spordle.com/game/802949?locale=fr",
+  "extracted_at": "2026-06-29T02:30:00Z",
+  "extraction_method": "PDF game sheet snapshot",
+  "goals": [
+    {
+      "time": "0:23",
+      "period": 1,
+      "player_name": "MAXENCE LANGLOIS",
+      "player_number": 78,
+      "team": "Sagueneens DR M13",
+      "position": "M",
+      "assists": [
+        {
+          "player_name": "CHRISTOPHE BERNARD",
+          "player_number": 86
+        }
+      ]
+    },
+    {
+      "time": "5:05",
+      "period": 1,
+      "player_name": "EDOUARD ST-PIERRE",
+      "player_number": 87,
+      "team": "Sagueneens DR M13",
+      "position": "E",
+      "assists": [
+        {
+          "player_name": "JEROME LACHAPELLE",
+          "player_number": 85
+        }
+      ]
+    },
+    {
+      "time": "6:45",
+      "period": 1,
+      "player_name": "JAMES ARSENEAULT",
+      "player_number": 77,
+      "team": "Sagueneens DR M13",
+      "position": "J",
+      "assists": [
+        {
+          "player_name": "JORDAN LOBE",
+          "player_number": 83
+        }
+      ]
+    },
+    {
+      "time": "10:53",
+      "period": 1,
+      "player_name": "TYLER STEINBERG",
+      "player_number": 84,
+      "team": "Sagueneens DR M13",
+      "position": "T",
+      "assists": [
+        {
+          "player_name": "SAMUEL JAMES BYRNS AUBUT",
+          "player_number": 73
+        }
+      ]
+    },
+    {
+      "time": "3:00",
+      "period": 2,
+      "player_name": "MAIK FORGET",
+      "player_number": 79,
+      "team": "Sagueneens DR M13",
+      "position": "M",
+      "assists": [
+        {
+          "player_name": "TYLER STEINBERG",
+          "player_number": 84
+        }
+      ]
+    },
+    {
+      "time": "7:41",
+      "period": 2,
+      "player_name": "BOISVERT MATHIS",
+      "player_number": 8,
+      "team": "Drakkar DR M13",
+      "position": "B"
+    },
+    {
+      "time": "14:12",
+      "period": 2,
+      "player_name": "MARCEAU WILLIAM",
+      "player_number": 17,
+      "team": "Drakkar DR M13",
+      "position": "M",
+      "assists": [
+        {
+          "player_name": "SANICO-POTVIN LOUIS",
+          "player_number": 4
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_goals": 7,
+    "sagueneens_goals": 5,
+    "drakkar_goals": 2,
+    "scoring_leaders": [
+      {
+        "player_name": "TYLER STEINBERG",
+        "team": "Sagueneens DR M13",
+        "number": 84,
+        "goals": 1,
+        "assists": 1,
+        "points": 2
+      },
+      {
+        "player_name": "MAXENCE LANGLOIS",
+        "team": "Sagueneens DR M13",
+        "number": 78,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      }
+    ]
+  }
+}
