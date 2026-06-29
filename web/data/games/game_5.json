@@ -1,0 +1,186 @@
+{
+  "id": "game_5",
+  "status": "FINAL",
+  "home_team": "FOREURS DR M13",
+  "away_team": "CATARACTES DR M13",
+  "home_score": 4,
+  "away_score": 6,
+  "date": "2026-05-08",
+  "tournament": "TOURNOI #DRM13-005",
+  "venue": "Complexe Sportif Thibault GM (Cadillac, QC)",
+  "extracted_at": "2026-06-29T02:55:00Z",
+  "extraction_method": "PDF game sheet snapshot",
+  "goals": [
+    {
+      "time": "4:30",
+      "period": 1,
+      "player_name": "SASHA MANOUKIAN",
+      "player_number": 15,
+      "team": "FOREURS DR M13",
+      "position": "S",
+      "assists": [
+        {
+          "player_name": "EDOUARD LANDRY",
+          "player_number": 16
+        }
+      ]
+    },
+    {
+      "time": "13:30",
+      "period": 1,
+      "player_name": "LOIK FERLATTE",
+      "player_number": 75,
+      "team": "CATARACTES DR M13",
+      "position": "L",
+      "assists": [
+        {
+          "player_name": "MILAN DROUIN",
+          "player_number": 79
+        },
+        {
+          "player_name": "DILAN MORIN",
+          "player_number": 83
+        }
+      ]
+    },
+    {
+      "time": "14:28",
+      "period": 1,
+      "player_name": "ISAAC SAURETTE",
+      "player_number": 84,
+      "team": "CATARACTES DR M13",
+      "position": "I",
+      "assists": [
+        {
+          "player_name": "WILLIAM LEFRANCOIS",
+          "player_number": 73
+        },
+        {
+          "player_name": "EDDY ACEVEDO MOQUIN",
+          "player_number": 85
+        }
+      ]
+    },
+    {
+      "time": "8:32",
+      "period": 2,
+      "player_name": "LEVI CORREIA",
+      "player_number": 86,
+      "team": "CATARACTES DR M13",
+      "position": "L",
+      "assists": [
+        {
+          "player_name": "MATTHEW CANTINI",
+          "player_number": 74
+        },
+        {
+          "player_name": "ANTHONY SEMINARA",
+          "player_number": 76
+        }
+      ]
+    },
+    {
+      "time": "12:17",
+      "period": 2,
+      "player_name": "SASHA MANOUKIAN",
+      "player_number": 15,
+      "team": "FOREURS DR M13",
+      "position": "S",
+      "assists": [
+        {
+          "player_name": "UMBERTO CATAVOLO",
+          "player_number": 6
+        }
+      ]
+    },
+    {
+      "time": "14:59",
+      "period": 2,
+      "player_name": "ZACK MAZZAWI",
+      "player_number": 9,
+      "team": "FOREURS DR M13",
+      "position": "Z",
+      "assists": [
+        {
+          "player_name": "ALEX DEROY",
+          "player_number": 11
+        }
+      ]
+    },
+    {
+      "time": "1:40",
+      "period": 3,
+      "player_name": "LEVI CORREIA",
+      "player_number": 86,
+      "team": "CATARACTES DR M13",
+      "position": "L",
+      "assists": [
+        {
+          "player_name": "MATTHEW CANTINI",
+          "player_number": 74
+        }
+      ]
+    },
+    {
+      "time": "6:17",
+      "period": 3,
+      "player_name": "ZACK MAZZAWI",
+      "player_number": 9,
+      "team": "FOREURS DR M13",
+      "position": "Z"
+    },
+    {
+      "time": "8:05",
+      "period": 3,
+      "player_name": "DILAN MORIN",
+      "player_number": 83,
+      "team": "CATARACTES DR M13",
+      "position": "D"
+    },
+    {
+      "time": "12:42",
+      "period": 3,
+      "player_name": "MATTHEW CANTINI",
+      "player_number": 74,
+      "team": "CATARACTES DR M13",
+      "position": "M",
+      "assists": [
+        {
+          "player_name": "DILAN MORIN",
+          "player_number": 83
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_goals": 10,
+    "foreurs_goals": 4,
+    "cataractes_goals": 6,
+    "scoring_leaders": [
+      {
+        "player_name": "LEVI CORREIA",
+        "team": "CATARACTES DR M13",
+        "number": 86,
+        "goals": 2,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "player_name": "SASHA MANOUKIAN",
+        "team": "FOREURS DR M13",
+        "number": 15,
+        "goals": 2,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "player_name": "ZACK MAZZAWI",
+        "team": "FOREURS DR M13",
+        "number": 9,
+        "goals": 2,
+        "assists": 0,
+        "points": 2
+      }
+    ]
+  }
+}
