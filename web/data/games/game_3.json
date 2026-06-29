@@ -1,0 +1,120 @@
+{
+  "id": "game_3",
+  "status": "FINAL",
+  "home_team": "OLYMPIQUES DR M13",
+  "away_team": "TIGRES DR M13",
+  "home_score": 2,
+  "away_score": 3,
+  "date": "2026-05-08",
+  "tournament": "TOURNOI #DRM13-003",
+  "venue": "Complexe Sportif Thibault GM (Cadillac, QC)",
+  "extracted_at": "2026-06-29T02:52:00Z",
+  "extraction_method": "PDF game sheet snapshot",
+  "goals": [
+    {
+      "time": "1:21",
+      "period": 1,
+      "player_name": "ALEXIS MAHEUX",
+      "player_number": 7,
+      "team": "TIGRES DR M13",
+      "position": "A",
+      "assists": [
+        {
+          "player_name": "CHARLES PELLETIER",
+          "player_number": 12
+        }
+      ]
+    },
+    {
+      "time": "7:20",
+      "period": 1,
+      "player_name": "FLORENT LITALIEN",
+      "player_number": 7,
+      "team": "OLYMPIQUES DR M13",
+      "position": "F",
+      "assists": [
+        {
+          "player_name": "ARTHUR POULIOT",
+          "player_number": 11
+        },
+        {
+          "player_name": "NATHAN GAGNON",
+          "player_number": 5
+        }
+      ]
+    },
+    {
+      "time": "11:48",
+      "period": 1,
+      "player_name": "EMILE LEBLANC",
+      "player_number": 14,
+      "team": "TIGRES DR M13",
+      "position": "E",
+      "assists": [
+        {
+          "player_name": "MATT LEMIEUX",
+          "player_number": 9
+        }
+      ]
+    },
+    {
+      "time": "2:09",
+      "period": 2,
+      "player_name": "CHARLES-OLIVIER DESBIENS",
+      "player_number": 17,
+      "team": "TIGRES DR M13",
+      "position": "C",
+      "assists": [
+        {
+          "player_name": "MILAN DERASPE",
+          "player_number": 3
+        },
+        {
+          "player_name": "KYLE NOEL",
+          "player_number": 2
+        }
+      ]
+    },
+    {
+      "time": "14:10",
+      "period": 2,
+      "player_name": "EDOUARD BOUDREAULT",
+      "player_number": 3,
+      "team": "OLYMPIQUES DR M13",
+      "position": "E",
+      "assists": [
+        {
+          "player_name": "NOAM PATENAUDE",
+          "player_number": 2
+        },
+        {
+          "player_name": "ISAAC GAUTHIER",
+          "player_number": 14
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_goals": 5,
+    "olympiques_goals": 2,
+    "tigres_goals": 3,
+    "scoring_leaders": [
+      {
+        "player_name": "EMILE LEBLANC",
+        "team": "TIGRES DR M13",
+        "number": 14,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "player_name": "CHARLES-OLIVIER DESBIENS",
+        "team": "TIGRES DR M13",
+        "number": 17,
+        "goals": 1,
+        "assists": 0,
+        "points": 1
+      }
+    ]
+  }
+}
